@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,700&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(73,87,207);
+  background: linear-gradient(70deg, rgba(73,87,207,1) 0%, rgba(127,85,203,1) 37%, rgba(200,80,194,1) 100%);
+}
+
+h1 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.even {
+  background-color: #ffffff;
+}
+
+.odd {
+  background-color: #f5f5f5;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  left: auto;
+  right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #37304a;
+}
+
+.credits {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 10px;  
+}
+
+.thumbnail {
+  padding-top:5px;
+  width: 35px;
+  height: 35px;
+}
+
+div.symbol {
+  font-size: 12px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.flex-container > div {
+  margin-right: 10px;
+}
+
+table {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+table, th, td {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #6e6e6e;
+  border: 0px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+th {
+  background-color: #37304a;
+  color: white;
+  text-align: left; 
+}
+
+table th:first-child {
+    border-radius:12px 0 0 0;
+}
+
+table th:last-child {
+    border-radius:0 12px 0 0;
+}
+
+table tr:last-child td:first-child {
+    border-radius:0 0 0 12px;
+}
+
+table tr:last-child td:last-child {
+    border-radius:0 0 12px 0;
+}
+
+table td:nth-last-child(2),
+table td:last-child, 
+table th:nth-last-child(2),
+table th:last-child {
+    text-align: right;
+}
